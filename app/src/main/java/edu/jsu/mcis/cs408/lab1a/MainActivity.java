@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 computerWeapon = Weapon.SCISSORS;
                 break;
         }
-        binding.computerChoice.setText("Computer chose: " + computerWeapon.getDescription() );
+        binding.computerChoice.setText(getString(R.string.computer_chose, computerWeapon.getDescription()));
 
     }
     private boolean CheckIfPlayerWins() {
@@ -64,13 +64,13 @@ public class MainActivity extends AppCompatActivity {
 
             switch(humanWeapon.ordinal()){
                 case 0:
-                    binding.winner.setText("Player wins! " + humanWeapon.getDescription() + " Crushes " + computerWeapon.getDescription() + "!");
+                    binding.winner.setText(getString(R.string.player_wins_rock,humanWeapon.getDescription(), computerWeapon.getDescription()));
                     break;
                 case 1:
-                    binding.winner.setText("Player wins! " + humanWeapon.getDescription() + " Covers " + computerWeapon.getDescription() + "!");
+                    binding.winner.setText(getString(R.string.player_wins_paper, humanWeapon.getDescription(), computerWeapon.getDescription()));
                     break;
                 case 2:
-                    binding.winner.setText("Player wins! " + humanWeapon.getDescription() + " Cuts " + computerWeapon.getDescription() + "!");
+                    binding.winner.setText(getString(R.string.player_wins_scissors, humanWeapon.getDescription(), computerWeapon.getDescription()));
                     break;
 
             }
@@ -80,19 +80,19 @@ public class MainActivity extends AppCompatActivity {
 
             switch(computerWeapon.ordinal()){
                 case 0:
-                    binding.winner.setText("Player loses! " + computerWeapon.getDescription() + " Crushes " + humanWeapon.getDescription() + "!");
+                    binding.winner.setText(getString(R.string.player_loses_rock, computerWeapon.getDescription(), humanWeapon.getDescription()));
                     break;
                 case 1:
-                    binding.winner.setText("Player loses! " + computerWeapon.getDescription() + " Covers " + humanWeapon.getDescription() + "!");
+                    binding.winner.setText(getString(R.string.player_loses_paper, computerWeapon.getDescription(), humanWeapon.getDescription()));
                     break;
                 case 2:
-                    binding.winner.setText("Player loses! " + computerWeapon.getDescription() + " Cuts " + humanWeapon.getDescription() + "!");
+                    binding.winner.setText(getString(R.string.player_loses_scissors, computerWeapon.getDescription(), humanWeapon.getDescription()));
                     break;
 
             }
             computerWins++;
         }
-        binding.totalwins.setText("Player: " + humanWins + ", Computer: " + computerWins);
+        binding.totalwins.setText(getString(R.string.totalwins, humanWins, computerWins));
 
     }
     public void onClickRock(View v){

@@ -6,4 +6,12 @@
     <string name="you_chose_rock">You chose Rock!</string>
     <string name="you_chose_paper">You chose Paper!</string>
     <string name="you_chose_scissors">You chose Scissors!</string>
+    <string name="computer_chose">"Computer chose: %1$s!"</string>
+    <string name="player_wins_rock">"Player wins! %1$s Crushes %2$s!"</string>
+    <string name="player_wins_paper">"Player wins! %1$s Covers %2$s! "</string>
+    <string name="player_wins_scissors">"Player wins! %1$s Cuts %2$s!"</string>
+    <string name="player_loses_rock">"Player loses! %1$s Crushes %2$s!"</string>
+    <string name="player_loses_paper">"Player loses! %1$s Covers %2$s!"</string>
+    <string name="player_loses_scissors">"Player loses! %1$s Cuts %2$s!"</string>
+    <string name="totalwins">"Player: %1$d, Computer: %2$d"</string>
 </resources>
